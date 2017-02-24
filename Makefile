@@ -39,8 +39,8 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 
 $(NAME): $(OBJ)
 	@make -s -C ./libft
-	@ar -rcs $(NAME) $?
-	@ar -rcT $(NAME) $(LIBFT)
+	@ar -rcs $(LIBFT) $?
+	@mv $(LIBFT) $(NAME)
 
 clean:
 	@$(RM) $(OBJ)
