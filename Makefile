@@ -39,7 +39,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 
 $(NAME): $(OBJ)
 	@make -s -C ./libft
-	@libtool -static -o $(NAME) $(LIBFT) $?
+	@ar -rcT $(NAME) $(LIBFT) $?
 
 clean:
 	@$(RM) $(OBJ)
