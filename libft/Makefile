@@ -10,6 +10,7 @@ SRCS = ft_memset.c \
 	   ft_memchr.c \
 	   ft_memcmp.c \
 	   ft_strlen.c \
+	   ft_wstrlen.c \
 	   ft_nstrlen.c \
 	   ft_strdup.c \
 	   ft_strndup.c \

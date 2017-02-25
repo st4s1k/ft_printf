@@ -15,8 +15,8 @@
 
 char	ft_get_format(va_list *parg)
 {
-	ft_bzero(g_fmt.flags, 5);
-	ft_bzero(g_fmt.len, 5);
+	ft_bzero(g_fmt.flags, sizeof(char) * 5);
+	ft_bzero(g_fmt.len, sizeof(int) * 5);
 	g_fmt.width = 0;
 	g_fmt.prec = -1;
 	while (*g_cur && !FSPEC(*g_cur))

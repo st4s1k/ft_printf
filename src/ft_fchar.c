@@ -16,6 +16,8 @@ int	ft_fchar(va_list *parg)
 {
 	char	chr[2];
 
+	if (g_fmt.len[1])
+		return (ft_fwchar(parg));
 	chr[0] = (*g_cur == 'c' ? va_arg(*parg, int) : '%');
 	chr[1] = '\0';
 	if (!g_stop && g_fmt.width > 1)

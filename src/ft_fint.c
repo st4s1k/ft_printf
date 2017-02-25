@@ -46,7 +46,7 @@ static intmax_t	ft_intlen(va_list *parg)
 		return ((intmax_t)(short)va_arg(*parg, int));
 	if (g_fmt.len[0] > 1)
 		return ((intmax_t)(char)va_arg(*parg, int));
-	return ((intmax_t)va_arg(*parg, int));
+	return ((intmax_t)(int)va_arg(*parg, int));
 }
 
 int				ft_fint(va_list *parg)
